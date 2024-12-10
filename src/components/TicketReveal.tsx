@@ -27,9 +27,9 @@ export const TicketReveal: React.FC<TicketRevealProps> = ({ isVisible, winner, o
           clearInterval(interval);
           setShowFullNumber(true);
           // Wait 2 seconds after showing full number before completing
-          setTimeout(onComplete, 2000);
+          setTimeout(onComplete, 4000);
         }
-      }, 4000); // 4 second delay between each digit
+      }, 15000); // 4 second delay between each digit
 
       return () => {
         clearInterval(interval);
